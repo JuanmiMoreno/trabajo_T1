@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo final del T1 - Juanmi Moreno</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        #portaFoto {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+
+        #laFoto {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+      
+
+        @media screen and (orientation:landscape) {
+            #portaFoto {
+                max-width: 1200px;
+                max-height: 800px;
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+            #portaFoto {
+                max-width: 600px;
+                max-height: 900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <h1><center>TRABAJO 1 TRIMESTRE </center></h1>
+
+    <picture id="portaFoto">
+
+        <source media="(orientation: landscape) and (min-width: 1201x)" srcset="mastin1-horizontalGRANDE.heic"
+            type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 1201px)" srcset="mastin1-horizontalGRANDE.webp"
+            type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 1201px)" srcset="mastin1.jpg" type="image/jpg">
+        
+        <source media="(orientation: portrait) and (min-width:351px)" srcset="mastin2-verticalGRANDE.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width:351px)" srcset="mastin2-verticalGRANDE.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width:351px)" srcset="mastin2.jpg" type="image/jpg">
+
+        
+        
+        <source media="(orientation: landscape) and (max-width: 1200px)" srcset="mastin3-horizontalPEQUEÑA.heic"
+            type="image/heic">
+        <source media="(orientation: landscape) and (max-width: 1200px)" srcset="mastin3-horizontalPEQUEÑA.webp"
+            type="image/webp">
+        <source media="(orientation: landscape) and (max-width: 1200px)" srcset="mastin3.jpg" type="image/jpeg">
+
+        <source media="(orientation: portrait) and (max-width:350px)" srcset="mastin4-verticalPEQUEÑA.heic" type="image/heic">
+        <source media="(orientation: portrait) and (max-width:350px)" srcset="mastin4-verticalPEQUEÑA.webp" type="image/webp">
+        <source media="(orientation: portrait) and (max-width:350px)" srcset="mastin4.jpg" type="image/jpg">
+
+        
+
+        <img id="laFoto" alt="Foto de un mastin español" title="Mastin Español" src="mastin1.jpg" />
+    </picture>
+
+</body>
+
+</html>
